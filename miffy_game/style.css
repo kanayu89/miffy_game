@@ -1,0 +1,64 @@
+/*style of the page & button*/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-width: 10px;
+  border-radius: 30px;
+  border-color: black;
+  cursor: grabbing;
+  background-color: white;
+  height: 80px;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/*style of the miffy png*/
+
+.miffy {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  width: 100px;
+  height: auto;
+}
+
+/* annimation of miffy*/
+
+@keyframes roll {
+  to {
+    transform: translateX(calc(100vw + 100px));
+  }
+
+  /*0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-200px) rotate(360deg);
+  }*/
+}
+
+/* annimation of ginger bread man*/
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: translateY(calc(100vh - 50px)) rotate(360deg);
+  } /* Adjust the size of the cupcake */
+}
